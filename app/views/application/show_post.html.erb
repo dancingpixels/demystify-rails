@@ -3,13 +3,13 @@
 		<!-- Link to lists of posts -->
 		<a href="/list_posts">Back to Posts</a>
 		<div class="post">
-			<h2 class="title"><%= post['title'] %></h2>
+			<h2 class="title"><%= post.title %></h2>
 			<small class="meta">
-			<span class="author">by <%= post['author'] %>&mdash;</span>
-			<em class="created_at"> <%= post['created_at'] %></em>
+			<span class="author">by <%= post.author %>&mdash;</span>
+			<em class="created_at"> <%= post.created_at %></em>
 			</small> <br>
-			<small><a href="/edit_post/<%= post['id'] %>">Edit Post</a></small>
-			<p class="body"><%= post['body'] %></p>
+			<small><a href="/edit_post/<%= post.id %>">Edit Post</a></small>
+			<p class="body"><%= post.body %></p>
 
 		</div>
 		<br>
